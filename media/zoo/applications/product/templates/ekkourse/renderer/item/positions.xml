@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderer>
+	<positions layout="full">
+		<position name="top">Top</position>
+		<position name="title">Наименование</position>
+		<position name="description">Описание</position>
+		<position name="prise">Цена</position>
+		<position name="prise_sale">Цена со скидкой</position>
+		<position name="additional_block_1">добавочный блок 1</position>
+		<position name="additional_block_2">добавочный блок 2</position>
+		<position name="additional_block_3">добавочный блок 3</position>
+		<position name="sale">Скидка</position>
+		<position name="time">Время начала</position>
+		<position name="time2">Время начала2</position>
+		<position name="date">Дата начала</position>
+		<position name="date2">Дата начала2</position>
+		<position name="duration">Продолжительность</position>
+		<position name="strength">Численность</position>
+		<position name="programm">Програмаа курса</position>
+		<position name="bottom">Bottom</position>
+		<position name="related">Related</position>
+		<position name="action">Акции</position>
+		<position name="license">Лицензия</position>
+		<position name="indi-training">Индивидуальное обучение</position>
+	</positions>
+	<positions layout="teaser">
+		<position name="title">Title</position>
+		<position name="media">Media</position>
+		<position name="description">Description</position>
+		<position name="prise">Цена</position>
+		<position name="prise_sale">Цена со скидкой</position>
+		<position name="date">Дата начала</position>
+		<position name="date2">Дата начала2</position>
+		<position name="duration">Продолжительность</position>
+		<position name="specification">Specification</position>
+		<position name="links">Links</position>
+	</positions>
+	<positions layout="related">
+		<position name="title">Title</position>
+		<position name="media">Media</position>
+		<position name="description">Description</position>
+		<position name="specification">Specification</position>
+		<position name="links">Links</position>
+	</positions>
+	<positions layout="feed">
+		<position name="description">Description</position>
+	</positions>
+	<positions layout="submission">
+		<position name="content">Content</position>
+		<position name="media">Media</position>
+		<position name="meta">Meta</position>
+		<position name="administration">Administration</position>
+	</positions>
+</renderer>

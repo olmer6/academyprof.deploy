@@ -1,0 +1,408 @@
+/* --- страница контактов ---*/
+.cntact_lcoll {
+    font-weight: 600;
+    text-align: right;
+}
+.cntact_rcoll {
+    border-left: 2px solid #1e88e5;
+    margin-bottom: 10px;
+    padding-left: 23px;
+}
+.contact-info .cntact_lcoll {
+    margin-left: 0;
+}
+
+/* верхнее меню */ 
+
+#sp-top-info ul.nav {
+    font-size: 1.1em;
+}
+#sp-top-info .nav li {
+    border-bottom: 2px solid white;
+    float: right;
+    margin-left: 9px;
+    padding: 0 7px;
+     -webkit-transition: all ease-out 0.3s;
+     -moz-transition: all ease-out 0.3s;
+     -o-transition: all ease-out 0.3s;
+     transition: all ease-out 0.3s;
+}
+/*
+#sp-top-info .nav li:nth-child(1){
+  background: #5d82d1;
+  }
+#sp-top-info .nav li:nth-child(2){
+  background: #40bff5 ;
+  }
+#sp-top-info .nav li:nth-child(3){
+  background: #eb5e4c;
+  }
+#sp-top-info .nav li:nth-child(4){
+  background: #e13138;
+  }
+#sp-top-info .nav li:nth-child(5){
+  background: #d77fa9;
+  }
+#sp-top-info .nav li:nth-child(6){
+  background: #5d82d1;
+  }
+  */
+#sp-top-info .nav li:hover{    
+    border-bottom: 12px solid white;
+
+  }
+
+#sp-top-info .nav li a {
+    color: #fff;
+    margin: 3px 0;
+     -webkit-transition: all ease-out 0.3s;
+     -moz-transition: all ease-out 0.3s;
+     -o-transition: all ease-out 0.3s;
+     transition: all ease-out 0.3s;
+  }
+#sp-top-info .nav li a:hover{
+  background: none;
+  }
+/*--- конец верхнего меню ---*/
+/* футер */
+#sp-bottom1 .contact-info .cntact_lcoll {
+    color: white;
+    font-weight: 400;
+}
+#sp-bottom1 .contact-info .cntact_rcoll {
+    color: white;
+}
+#sp-bottom2 p{
+    color: white;
+  }
+/* конец футера */ 
+/* ---блог категории новостей --- */
+
+.news_blog h2 {
+    font-size: 24px;
+    line-height: 1.4em;
+}
+.news_blog h2 a {
+    color: #1565c0;
+}
+/* --- конец блога категории новостей --- */
+/* --- разметка страницы с описанием учебного курса --- */ 
+
+#yoo-zoo .floatbox .pos-prise, 
+#yoo-zoo .floatbox .pos-prise_sale, 
+#yoo-zoo .floatbox .pos-sale, 
+#yoo-zoo .floatbox .pos-time, 
+#yoo-zoo .floatbox .pos-date, 
+#yoo-zoo .floatbox .pos-duration, 
+#yoo-zoo .floatbox .pos-strength, 
+#yoo-zoo .floatbox .additional_block {
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 4px;
+    padding: 3px;
+}
+#yoo-zoo .floatbox [class*="span"] {}
+#yoo-zoo .floatbox .pos-title {}
+#yoo-zoo .floatbox .pos-description {
+    margin-left: 0;
+  }
+#yoo-zoo .floatbox .pos-prise,
+#yoo-zoo .floatbox .pos-prise_sale {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #1e88e5;
+    color: #222;
+    font-weight: 400;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+
+#yoo-zoo .floatbox .additional_block {	
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #1e88e5;
+    color: #222;
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+#yoo-zoo .floatbox .pos-sale {}
+
+#yoo-zoo .floatbox .pos-time, 
+#yoo-zoo .floatbox .pos-date, 
+#yoo-zoo .floatbox .pos-duration, 
+#yoo-zoo .floatbox .pos-strength {padding-left:50px;}
+#yoo-zoo .floatbox .pos-time {position: relative;}
+#yoo-zoo .floatbox .pos-time:before {content: "\f017";}
+#yoo-zoo .floatbox .pos-date {position: relative;}
+#yoo-zoo .floatbox .pos-date:before {content:"\f073";}
+#yoo-zoo .floatbox .pos-duration {position: relative;}
+#yoo-zoo .floatbox .pos-duration:before {content:"\f0f3";}
+#yoo-zoo .floatbox .pos-strength {position: relative;}
+#yoo-zoo .floatbox .pos-strength:before {content:"\f0c0";}
+#yoo-zoo .floatbox .pos-programm {
+    margin-left: 0;
+  }
+#yoo-zoo .floatbox .pos-bottom {
+    margin-left: 0;
+  }
+#yoo-zoo .floatbox .pos-related {
+    border-top: 4px solid #1565c0;
+    font-style: italic;
+    margin-left: 0;
+    margin-top: 8px;
+    padding-top: 7px;
+}
+#yoo-zoo .floatbox .abolished_price {}
+#yoo-zoo .floatbox .pos-action {
+	margin-top: 20px;
+	text-align: right;
+	background: #0d47a1;
+	padding-top: 1px;
+}
+#yoo-zoo .floatbox .pos-action h3{
+    color: white;
+    font-weight: 600;
+    margin: 12px 15px 0px 20px;
+    border-bottom: 2px dashed;
+    padding-bottom: 10px;
+
+}
+#yoo-zoo .floatbox .pos-action .element{
+	padding: 13px 15px;
+	color: white;
+	font-size: 1.1em;
+}
+#yoo-zoo .floatbox .pos-license {margin-top: 25px;}
+#yoo-zoo .floatbox .pos-indi-training{
+    border: 1px solid #1e88e5;
+    padding: 14px 12px;
+	background: #e3f2fd;
+}
+#yoo-zoo .floatbox .pos-indi-training h3 {
+    border-bottom: 1px solid;
+    padding-bottom: 8px;
+    text-align: right;
+}
+#yoo-zoo .floatbox .pos-indi-training .element{}
+
+#yoo-zoo .floatbox .pos-prise .element, 
+#yoo-zoo .floatbox .pos-prise_sale .element, 
+#yoo-zoo .floatbox .pos-sale .element{ 
+    display: inline-block;
+    margin-left: 3px;
+  float: right;
+  font-weight: 600;
+}
+#yoo-zoo .floatbox .pos-time .element, 
+#yoo-zoo .floatbox .pos-date .element, 
+#yoo-zoo .floatbox .pos-duration .element, 
+#yoo-zoo .floatbox .pos-strength .element {
+  font-weight: 600;
+}
+#yoo-zoo .floatbox .pos-prise_sale .element {
+    color: Red;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#yoo-zoo .floatbox .pos-prise_sale .element:after {content: "!"; padding-left: 3px;}
+#yoo-zoo .floatbox .pos-sale .element{}
+#yoo-zoo .floatbox .pos-time .element{}
+#yoo-zoo .floatbox .pos-date .element{}
+#yoo-zoo .floatbox .pos-duration .element{}
+#yoo-zoo .floatbox .pos-strength .element{}
+.vdpr_block {}
+
+.pos-indi-training{}
+.pos-indi-training .sigProContainer{
+	float: none;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.pos-indi-training .sigProContainer .sigProThumb{margin: 0 0 15px;}
+.pos-indi-training .sigProContainer .sigProThumb .sigProLinkOuterWrapper{
+	padding: 0;
+	background-size: cover;
+}
+.pos-indi-training .sigProContainer .sigProThumb .sigProLinkWrapper{
+	padding: 0;
+	border: none;
+}
+.pos-indi-training .sigProContainer .sigProThumb .sigProLink,
+.pos-indi-training .sigProContainer .sigProThumb .sigProLink .sigProImg {
+  width: 127px !important;
+  height: 94px !important;
+}
+.pos-indi-training .sigProClear{display:none;}
+
+
+/* слайдер */ 
+.sp-awetive-layout .sp-slider-content::after {
+    border-style: none;
+}
+#sp-slider-wrapper .sp-smart-slider.sp-awetive-layout .sp-slider-content {
+    background: none repeat scroll 0 0 rgba(13, 71, 161, 0.8);
+  margin: 2%;
+    padding: 24px 20px 20px;
+}
+.sp-awetive-layout .sp-slider-content {
+    background: none repeat scroll 0 0 #1e88e5;
+    height: 90%;
+    left: 0;
+    padding: 20px;
+    width: 30%;
+}
+/* конец слайдера */ 
+
+/* ---- всячина --- */
+#sp-feature-wrapper .features .sp-feature h3 {
+    padding-right: 25px;
+    text-transform: unset;
+}
+#modlgn-remember{margin-top:0px;}
+
+#sp-component .post-63 a.span2 {
+  cursor: pointer;
+}
+.modal.fade {
+  display: none;
+}
+.no_bacground,
+#sp-right .no_bacground .mod-wrapper, #sp-left .no_bacground .mod-wrapper {
+  background: none;
+}
+.sp-mobile-menu ul li a {
+	color:#ccc;
+}
+
+/* ---- конец всячины ---- */
+
+
+
+ 
+/*--- страница "ликей" ---*/
+.likey{}
+h2.likey{font-size: 25px;}
+
+ table.likey{border: none;}
+ table.likey tr{border: none;}
+ table.likey tr td{
+	border-color: #1e88e5;
+	border-bottom-width: 4px;
+	border-style: solid;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	padding: 0 10px;
+}
+ table.likey tr td:nth-child(1){width: 60%;}
+ table.likey tr td:nth-child(2){width: 20%;}
+ table.likey tr td:nth-child(3){}
+ table.likey tr td:nth-child(4){width: 13%;}
+/*--- конец страницы "ликей" ---*/
+
+/*--- модуль скидка-этикетка ---*/
+.module.sale_label {
+	background-color: red;
+	padding: 12px 15px 9px;
+	position: fixed;
+	left: 0px;
+	bottom: 50px;
+	max-width: 220px;
+}
+.module.sale_label::before, 
+.module.sale_label::after {
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	right: -76px;
+	top: 0;
+	content: '';
+	border-width: 40px;
+	border-style: solid;
+	
+	border-top-color: red;
+	border-bottom-color: rgba(0,0,0,0);
+	border-left-color: red;
+	border-right-color: rgba(0,0,0,0);
+}
+.module.sale_label::before{}
+.module.sale_label::after{
+	border-top-color:  rgba(0,0,0,0);
+	border-bottom-color: red;
+	border-left-color:  red;
+	border-right-color: rgba(0,0,0,0);	
+	bottom: 0px;
+	top: auto;
+	
+}
+
+.module.sale_label .mod-wrapper-flat{}
+.module.sale_label .mod-wrapper-flat h2{font-weight: 600;}
+#sp-bottom-wrapper .module.sale_label .mod-wrapper-flat .module-title{
+	font-weight:600;
+	margin: 5px 0 13px;
+}
+.module.sale_label .mod-wrapper-flat .sp-badge.sale_label{}
+.module.sale_label .mod-wrapper-flat .customsale_label{}
+#sp-bottom-wrapper .module.sale_label p {
+	color: #fff;
+}
+/*--- конец модуля скидка-этикетка ---*/
+
+.right_pos_video{width: 100%;}
+
+
+.mobil{display:none}
+.no_mobil{display:block}
+
+/* ---- media ---- */
+@media(max-width:768px){
+	
+	.mobil{display:block}
+	.no_mobil{display:none}
+	
+	.responsive #sp-header-wrapper #sp-logo{float: none;}
+	.responsive .icemegamenu{
+		border-bottom: 1px solid white;
+		border-top: 1px solid white;
+		padding-top: 8px;
+	}
+	.sp-mobile-menu ul li{background: rgba(0, 0, 0, 0.2);}
+	.responsive ul.breadcrumb{
+		margin: 14px 0 0;
+	}
+	.sp-main-menu-toggler{background: none;}
+	.sp-main-menu-toggler i{font-size: 26px;}
+	.responsive #sp-bottom-wrapper #sp-bottom1, 
+	.responsive #sp-bottom-wrapper #sp-bottom2, 
+	.responsive #sp-bottom-wrapper #sp-bottom3, 
+	.responsive #sp-bottom-wrapper #sp-bottom4 {
+		width: 100%;
+	}
+	#sp-bottom1 .contact-info .cntact_lcoll{
+		text-align: left;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	#yoo-zoo .pos-programm table{
+		width: 100%;
+		display: block;
+		overflow: auto;
+	}
+	#content-top .cntact_lcoll{
+		text-align: left;
+		border-top: 1px solid #1e88e5;
+		padding-top: 15px;
+	}
+	.captcha_win1 .control-label{text-align: left;}
+	.captcha_win1 .controls{
+		margin-left: 0;
+		margin-top: 8px;
+		margin-bottom: 15px;
+	}
+	
+}

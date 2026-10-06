@@ -1,0 +1,821 @@
+/**
+ * @package Helix Framework
+ * @author JoomShaper http://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2013 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or later
+*/
+
+@import 'variables';
+@import 'mixins';
+
+/*-- Global color style --*/
+	//Link color
+	a{
+		color: @link_color;
+		&:hover {
+		  color: darken(@link_color, 10%);
+		}
+	}
+	body {
+		color:@text_color;
+		&.bg {
+			background:@bg_color;
+		}
+	}
+/*-- Global color style end --*/
+
+
+/*-- Button start --*/
+	.btn.btn-primary, .readmore, a.ns2-readmore, .btn-default, 
+	#community-wrap .btn, button,
+	input[type="submit"]{
+		background: @link_color;
+		&:hover{
+			background: darken(@link_color, 10%);
+		}
+	}
+/*-- Button end start --*/
+
+/*-- Header background here --*/
+#sp-header-wrapper{
+		background: @major_color;
+}
+
+
+/*-- Header start here --*/
+#sp-header-wrapper{
+	#header{
+		background: @major_color/*@module_color*/;
+	}
+}
+
+//Logo
+.logo{
+	background-image:url(../../images/presets/@{preset}/logo.png);
+}
+
+//top info
+#sp-top-info{
+	ul.social-icons{
+		i{
+			&:hover{
+				background: @minor_color;
+			}
+		}
+	}
+}
+/*-- Header end here --*/
+
+/*-- Menu wrapper start --*/
+#sp-menu-wrapper{
+	background: @minor_color;
+}
+#menu{
+	background: @minor_color;
+}
+
+#sp-main-menu {
+ 	ul {
+ 		&.level-0 {
+ 			> li {
+				&:hover,
+				&.active {
+					
+				}
+				&:hover {
+					
+				}
+			}
+		}
+	}
+	//Menu Items for Dropdown
+	li{
+		li:not(.sp-menu-group) {
+			&:hover,
+ 			&.active{
+ 				background-color: @link_color;
+ 			}
+		}
+	}
+}
+//submenu
+.sp-submenu {
+	.sp-submenu-wrap{
+		background: @minor_color;
+	}
+}
+/*-- Menu wrapper end --*/
+
+/*-- Slideshow start here --*/
+#sp-slider-wrapper{
+	.sp-smart-slider.sp-awetive-layout{
+		.sp-slider-content{
+			background: @major_color;
+			&:after{
+				border-left: 400px solid @major_color;
+			}
+		}
+		h1.sp-title{
+			color: @major_color;
+		}
+		//pagination
+		.slide-indicators{
+			li{
+				background: @major_color;
+			}
+		}
+	}
+}
+/*-- Slideshow end here --*/
+
+/*-- Features start here --*/
+#sp-feature-wrapper{
+	#sp-feature{
+		background: @module_color;
+	}
+	.features{
+		.sp-feature{
+			i{
+				background: @major_color;
+			}
+		}
+	}
+}
+/*-- Features end here --*/
+
+/*-- Content area start here--*/
+
+// Feature tab
+.sptab{
+	background: @module_color;
+	//tab nav
+	ul.nav-tabs{
+		background: @link_color;
+		li{
+			&.active{
+				a{
+					color: @link_color;
+				}
+			}
+		}
+	}
+}
+.awetive-layout:after{
+	background: @major_color;
+}
+
+//Recent Works
+.recent-work{
+	.ns2-column > div{
+		background: @module_color;
+	}
+
+	//image wrapper
+	.ns2-inner-image-wrapper{
+		//readmore
+		a.ns2-readmore{
+			background: @minor_color;
+		}
+		&:hover{
+			.img-overlay{
+				background: @link_color;
+			}
+		}
+	}
+	//arrow
+	a.prev, 
+	a.next{
+		background: @link_color;
+		&:hover{
+			background: darken(@link_color, 10%);
+		}
+	}
+	h3.ns2-title{
+		a{
+			color: @text_color;
+		}
+	}
+}
+
+//Clients area
+.clients{
+	background: @module_color;
+}
+
+//left-right module
+#sp-right, 
+#sp-left{
+	.module{
+		.mod-wrapper{
+			h2.module-title {
+				background: @link_color;
+			}
+		}
+		//transparent
+		&.transparent{
+			h2.module-title{
+				color: @text_color;
+			}
+		}
+	}
+	.testimonial-frontpage{
+		h2.module-title{
+			background: @minor_color !important;
+		}
+	}
+}
+
+/*-- Content area end here--*/
+
+/*-- Bottom start here --*/
+#sp-bottom-wrapper{
+	#bottom{
+		border-top: 4px solid @major_color;
+		background: @minor_color;
+	}
+	ul{
+		li{
+			a:hover{
+				color: @link_color;
+			}
+		}
+	}
+}
+/*-- Bottom end here --*/
+
+
+/*-- Footer start here --*/
+#sp-footer-wrapper {
+	ul {
+		&.nav {
+			li {
+				a {
+					&:hover{
+						background:none;
+						color: @link_color;
+					}
+				}
+			}
+		}
+	}
+	.sp-totop{
+		i{
+			background: @link_color;
+
+		}
+	}
+}
+/*-- Footer end here --*/
+
+
+/*-- Sub Page start here --*/
+
+//Breadcrumb
+ul{
+	&.breadcrumb{
+		li{
+			color: @text_color;
+			a{
+				color: @text_color;
+			}
+			span.divider{
+				color: @text_color;
+			}
+		}
+	}
+}
+
+//Module variation
+#users{
+	//background: @module_color;
+}
+
+//Content top wrapper
+#sp-content-top-wrapper{
+	#content-top{
+		background: @module_color;
+	}
+}
+
+//About Us Page
+.about-slide{
+	.carousel-slide-content{
+		h2{
+			color: @text_color;
+		}
+		p{
+			color: @text_color;
+		}
+	}
+	.carousel-control{
+		color: @text_color;
+	}
+}
+
+//Team
+.sp-team{
+	.sp-member{
+		h3{
+			color: @text_color;
+		}
+		p.sp-designation{
+			color: @link_color;
+		}
+	}
+}
+
+//service page
+.features{
+	.sp-feature{
+		i{
+			background: @major_color;
+		}
+	}
+}
+
+//portfolio
+ul.sp-portfolio-filter{
+	li{
+		a.btn{
+			&.active{
+				background-color: @link_color !important;
+			}
+		}
+	}
+}
+.sp-portfolio{
+	.sp-portfolio-item-details{
+		h4.item-title{
+			margin-bottom: 0;
+			a{
+				color: @text_color !important;
+			}
+		}
+		a{
+			color: @link_color;
+		}
+	}
+}
+
+.sp-portfolio{
+	.sp-portfolio-thumb{
+		.sp-portfolio-overlay{
+			background: @link_color !important;
+			> div > a{
+				background: @minor_color !important;
+			}
+		}
+	}
+}
+
+/*-- Sub Page end here --*/
+
+/*-- Shortcode start here--*/
+
+//Gallery shortcode
+.gallery-filters{
+	a{
+		&.active{
+			background-color: @link_color !important;
+		}
+	}
+}
+
+.nav-pills>.active>a, .nav-pills>.active>a:hover, 
+.nav-pills>.active>a:focus{
+	background: @link_color;
+}
+/*-- Shortcode end here--*/
+
+
+
+/*-- Blog start here --*/
+.blog-info-wrapper{
+	background: @minor_color;
+}
+div.catItemCategory,
+div.userItemCategory,
+div.tagItemCategory,
+div.itemCategory{
+	background: @major_color;
+}
+
+
+.pagination ul li a:hover, 
+.pagination ul li a.active,
+.pagination ul>li:last-child>a{
+	background: @link_color !important;
+	color: #fff;
+}
+ .pagination ul li.pagination-active a,
+ div.itemComments ul.itemCommentsList li span.commentDate,
+ div.itemComments ul.itemCommentsList li span.commentLink a{
+ 	background: @link_color !important;
+ }
+
+ //archive,user,category
+div.k2ItemsBlock ul li a,
+div.catItemHeader h3.catItemTitle a,
+div.userItemHeader h3.userItemTitle a,
+h2.tagItemTitle a{
+	color:@text_color;
+}
+div.k2CategoriesListBlock ul li a,
+div.k2ItemsBlock ul li a,
+div.k2ArchivesBlock ul li a{
+	color: @text_color;
+	&:hover{
+		color:@link_color;
+	}
+}
+div.k2CategoriesListBlock ul li.activeCategory a,
+div.itemComments h3.itemCommentsCounter,
+div.itemCommentsForm h3{
+	color: @link_color;
+}
+div.k2TagCloudBlock a{
+	background: #d9d9d9;
+	color: @text_color;
+	&:hover{
+		background: @minor_color;
+		color: #fff;
+	}
+}
+
+/*-- Blog end here --*/
+/* -- dop styles -- */
+#yoo-zoo{
+	.floatbox {
+		h1.pos-title, h2, h3 {
+			color: desaturate(@major_color, 15%);
+		}
+		.pos-prise {
+			.element {
+				color: @major_color;
+				font-weight: 600;
+			}
+		}
+		.abolished_price {
+			.element {
+				text-decoration: line-through;
+				color: lighten(desaturate(@major_color, 35%), 40%);
+			}
+		}
+		.pos-time, 
+		.pos-date, 
+		.pos-duration, 
+		.pos-strength {
+			border-color: @major_color;
+			color: @text_color;
+			border-bottom: 1px solid lighten(desaturate(@major_color, 35%), 10%);
+			&:before {
+				color: @major_color;
+				font-family: FontAwesome;
+				display: block;
+				left: 1px;
+				position: absolute;
+				top: 19px;
+				font-size:35px;
+			}
+		}
+		.pos-time .element, 
+		.pos-date .element, 
+		.pos-duration .element, 
+		.pos-strength .element {
+			color: @major_color;
+		}
+		.pos-programm {
+			margin-top: 15px;
+		}
+		.pos-zapisatsya{
+			background-color:lighten(saturate(spin(@major_color -110%) 30%) 15%);
+			padding: 8px 15px;
+			text-align: right;
+			a {
+				color: #fff;
+				&:hover{color:#fff;}
+			}
+		}
+	}
+	.details {
+	}
+	.items {
+		.box-1{
+			.row {
+				.teaser-item{
+					border-top: 1px solid lighten(desaturate(@major_color, 35%), 40%);
+					font-size: 0.9em;
+					h2 {
+					margin: 5px	0px 8px 0px;
+					}
+					.pos-prise {
+						color: #222;
+						font-weight: 400;
+						padding: 0px 1px 2px 3px;
+						text-transform: uppercase;
+						font-size: 1em;
+						.element {
+							color: @major_color;
+							font-weight:600;
+						}
+					}
+						
+						
+					.abolished_price {
+						.element {
+							text-decoration: line-through;
+							color: lighten(desaturate(@major_color, 35%), 40%);
+						}
+					}
+					.pos-prise_sale {
+						.pos-prise;
+							.element {
+							    color: Red;
+								font-weight: 600;
+								text-decoration: underline;
+							}
+					}
+					.element_ {display: inline; margin-left: 4px; font-weight: 600;}
+					.pos-date .element {.element_;}
+					.pos-duration .element {.element_;}
+					.pos-links {
+						text-align: right;
+						span {
+							margin-right: 20%;
+							padding: 5px 11px;
+							background-color: @link_color;
+							&:hover {}
+							a {color: #fff;}
+						}
+						span:hover a {color: #fff;}
+					}
+				}
+			}
+		}
+	}
+
+}
+#sp-component {
+	.skill-cell {
+		padding: 5px 10px;
+		border-bottom-width: 3px;
+	}
+	.skill-green {
+		.skill-cell; 
+		background-color: @link_color;
+		border-bottom:  solid @module_color;
+		color: @module_color;
+	}
+	.skill-white {
+		.skill-cell; 
+		background-color: @module_color;
+		border-bottom: solid @link_color;
+		border-right: 1px solid lighten(@link_color 30%);
+		color: @major_color;
+	}
+	.border-perimetr {
+		table, tbody {border-color: @link_color;}
+	}
+	.td-first-last {
+		td {.skill-white }
+		td:last-child {.skill-green }
+	}
+	.product-ekkvalif-proektirovanie-zdanij-i-sooruzhenij-2 {
+		.td-first-last ;
+		.podzagolovok {
+			.skill-white;
+			border-right: 0px none @module_color !important;
+			background-color: @module_color !important;
+			border-bottom: solid @link_color !important;
+			color: @major_color !important;
+		}
+	}
+	.product-ekkvalif-inzhenernye-izyskaniya-2, .product-ekkvalif-okhrana-truda-3, .product-ekkvalif-bezopasnost-stroitelstva-2, .product-ekkvalif-pozharnaya-bezopasnost-3, .product-ekkvalif-elektrobezopasnost, .product-ekkvalif-rabochie-professii, .product-ekkvalif-ekologicheskaya-bezopasnost, .product-ekkvalif-programmy-professionalnoj-perepodgotovki, .product-ekkvalif-bukhgvlteriya-i-upravlenie
+	{.td-first-last ;}
+	.product-ekkvalif-kadastrovye-inzhenery{
+		.kadastrovye-inzhenery_pk{
+			.td-first-last ;
+			width:100%;
+		}
+	}
+	.groups_electrosecurity {
+		td:last-child {
+		.skill-white;
+			border-right: 0px none @module_color !important;
+		}
+	}
+	.product-ekkourse-1s-predpriyatie-8-4, .product-ekkourse-1s-predpriyatie-8-5, .product-ekkourse-1s-predpriyatie-8-6 {
+		.pos-programm{
+			h4 {font-weight: 600;}
+			p {margin-left: 20px;}
+		}
+	}
+}
+	
+	
+#jc {
+	h4 {
+		color:@link_color;
+	}
+	#comments{
+		.jcommentItem {
+			.comment-box {
+			    padding: 28px 55px 20px;
+				.comment-date {
+					background-image: none;
+					color: #333;
+					font-size: 0.9em;
+					margin: 0 0 7px;
+					padding: 0;
+				}
+				.comment-author {
+					background: @link_color;
+				    color: #fff;
+					display: inline;
+					font: bold 1em Verdana,Arial,sans-serif;
+					margin: 0 0 0 -55px;
+					padding: 5px 21px 5px 55px;
+				}
+				.comment-body {
+					color:@text_color;
+					margin: 10px 0 0;
+				}
+				.comments-buttons {
+					a {
+						border-bottom-style: dashed;
+						border-bottom-width: 1px;
+						outline: medium none;
+						position: relative;
+						top: -6px;
+					}
+				}
+			}
+		}
+	}
+}
+.rsformmod-napisat-nam {
+	padding: 8px;
+	background-color: @minor_color;
+	color: @module_color;
+	#rsform_6_page_0 {
+		.formControlLabel {
+			float: none;
+			width: 100%;
+			text-align: left;
+			margin-bottom: 4px;
+			}
+		.formControls {
+			margin-left: 0; 
+			.rsform-input-box {
+				width: 97%;	
+				margin-bottom: 1px;
+			}			
+			.rsform-text-box {
+				width: 99%;
+			}
+			.formDescription {margin-top:0;}
+		}
+		.rsform-block {
+			margin-bottom: 1px;
+			input.rsform-submit-button {
+				background-color: @text_color;
+				background-image: none;
+				&:hover {
+					background-color: darken (@text_color, 25%);
+				}
+			}
+		}
+	}
+	.formResponsive {margin:0}
+}
+
+
+#sp-right{ 
+	.testimonial-frontpage.title-3 {
+		.mod-wrapper {
+			background: @bg_color;
+			.mod-content {
+				background: @minor_color;
+				.nav {
+					margin:1px 2px 3px 15px;
+					a {
+						color: #fff;
+						&:hover { 
+							background: @minor_color;
+						}
+					}
+				}
+			}
+		}
+	}
+	.mod-akcii-i-skidki {
+		outline: 4px dashed rgba(255,255,255,0.8); 
+		outline-offset: -15px; 		
+		.mod-wrapper {
+			background-color: @minor_color;
+			color:  @module_color;
+			padding: 0 15px;
+				.custommod-akcii-i-skidki {
+
+				padding: 15px;
+					.title_skidki {
+					font-size: 18px;
+					line-height: 32px;
+						span {
+							background-color: @module_color;
+							color: #142;
+							padding: 0 9px; 
+							/*
+							border-radius: 60px;
+							display: inline-block;
+							font-size: 32px;
+							font-weight: 600;
+							padding: 25px 15px 15px 16px;
+							position: relative;
+							top: 3px;
+							border: 1px solid;
+							border-color: @minor_color;
+							-webkit-transition: all ease-out 0.5s;
+							-moz-transition: all ease-out 0.5s;
+							-o-transition: all ease-out 0.5s;
+							transition: all ease-out 0.5s;
+							&:hover {
+								background-color: @minor_color;
+								color: @module_color;
+								border-color: @module_color;
+							}
+							*/
+						}
+					}
+				}
+			a {
+				color: @module_color;
+				&:hover {
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+	
+}
+#sp-content {
+	.glanews {
+		background-color: @module_color;
+		padding: 8px;
+		h2 {border-bottom: 2px solid @minor_color;}
+		a { text-align: right; display: block;}
+	}
+}
+#icemegamenu ul.icesubMenu, #subMenusContainer ul.icesubMenu {  
+		background:@minor_color;
+		border:1px solid rgba(0,0,0,.2);
+
+}
+.vacansy {
+	border-bottom: 1px dashed @minor_color;
+	margin-bottom: 32px;
+	h4 {
+		color: #142;
+		font-size: 1.4em;
+	}
+	span {
+		color: @minor_color;
+		font-weight: 600;
+	}
+}
+.skidki-raspisane {
+	border-top: 1px solid @minor_color;
+	tr{
+		th{
+			background-color: @major_color;
+			color: @module_color;
+			border-right: 1px solid @module_color;
+			padding: 5px;
+		}
+		td{
+			border-right: 1px solid @major_color;
+			padding: 5px;
+			text-align: center;
+			&:first-child {
+				text-align: left;
+			}
+			&:last-child {
+				border-right: 0px none @module_color;
+			}
+			a {text-decoration: anderline;}
+		}
+		&:nth-child(even) {
+		background-color: lighten (@major_color, 68%);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
